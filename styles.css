@@ -1,0 +1,334 @@
+/* Global Styles
+================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333333; /* Dark Gray */
+  background-color: #f7f7f7; /* Very Light Gray */
+ font-size: 20px;
+  font-weight: 400;  
+  } 
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  color: #2c3e50; /* Navy Blue */
+}
+
+
+a:hover {
+  color: #005bff; /* Darker Light Blue*/
+}
+
+.accent-text {
+  font-family: 'Courier New', monospace;
+  font-weight: 500;
+  color: #ff6f61; /* Coral */
+}
+
+p {
+ padding-top: 20px;
+ padding-left:40px;
+ padding-bottom: 20px;
+}
+
+ul {
+  padding-left: 40px;
+}
+
+.featured-artwork h3 {
+  text-align: left;
+}
+
+/* :root {
+  --spacing-unit: 8px;
+}
+
+.margin-top-8 {
+  margin-top: var(--spacing-unit);
+}
+
+.margin-bottom-16 {
+  margin-bottom: calc(2 * var(--spacing-unit));
+}
+
+.padding-left-24 {
+  padding-left: calc(3 * var(--spacing-unit));
+}
+.font-size-16 {
+  font-size: 16px
+} */
+/* etc. */
+
+/* Navigation
+================================================== */
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2c3e50;
+}
+
+nav li {
+  margin-right: 100px;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+nav {
+  height: 80px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  line-height: 80px;
+}
+
+nav a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Hero Section
+================================================== */
+
+.hero {
+  background-color: #007bff; /* Light Blue*/
+  padding: 20px;
+  text-align: center;
+  height: 100%; /* Set the hero section to full viewport height*/
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.hero img {
+  width: 100%; /* Set the image to full width*/
+  max-width: 500px;
+  object-fit: cover;
+  border-color: black;
+  border-radius: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #fff;
+  animation: heroAnimation 2s ease-in-out;
+}
+
+@keyframes heroAnimation {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  50%{
+    color: #f5ffd9;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Home Page Styles
+================================================== */
+
+.featured-artwork {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.featured-artwork li {
+  margin: 20px;
+  width: calc(25% - 20px);
+}
+
+.featured-artwork img {
+  width: 400px; /* make the image full-width */
+  height: 100%; /* set a fixed height to zoom in the image */
+  object-fit: cover;
+  border-radius: 10px; /* add a slight border radius for a nicer look */
+  transition: transform 0.3s ease; /* add a smooth transition effect */ 
+  float: left;
+}
+
+.featured-artwork img:hover {
+  transform: scale(1.1); /* zoom in the image on hover */
+}
+
+.featured-artwork h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* About Page Styles
+================================================== */
+/* 
+.about {
+  padding: 20px;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #032B44; Navy Blue
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.about p {
+  font-size: 108px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.about ul {
+  list-style: decimal;
+  margin-left: 20px;
+  margin-bottom: 200px;
+ 
+}
+
+.about li {
+  font-size: 118px;
+  color: #666;
+ padding: 20px;
+}
+
+.about a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.about a:hover {
+  color: #005bff;
+  text-decoration: underline;
+} */
+/* Artwork Page Styles
+================================================== */
+
+.artwork-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.artwork-gallery li {
+  margin: 20px;
+  width: calc(80% - 20px);
+}
+
+.artwork-details {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.artwork-details li {
+  margin-bottom: 10px;
+}
+
+.artwork-details strong {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* contact page */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #4d4d4d3a;
+  border-radius: 5px;
+}
+
+.contact button[type="submit"] {
+  / background-color:
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.contact button[type="submit"]:hover{
+  background-color: #35b5ff; 
+}
+
+.ibutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.ibutton a {
+  margin: 0 10px;
+}
+
+.ibutton img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.ibutton img:hover {
+  transform: scale(1.2);
+}
