@@ -91,7 +91,7 @@ nav ul {
   padding: 0;
   display: flex;
   flex-direction: column; /* Stack navigation items vertically */
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: #2c3e50;
 }
 
@@ -99,9 +99,6 @@ nav li {
   margin-right: 0;
 }
 
-nav a {
-  color: #fff;
-}
 
 nav a:hover {
   color: #ccc;
@@ -133,10 +130,11 @@ nav a:hover {
   background-color: #007bff; /* Light Blue*/
   padding: 20px;
   text-align: center;
-  height: auto; /* Set the hero section to full viewport height*/
+  height: 100vh; /* Set the hero section to full viewport height*/
   display: flex;
   justify-content: left;
   align-items: center;
+  width: 100vw; /* Add this line to make the hero section full width */
 }
 
 .hero img {
@@ -285,8 +283,15 @@ nav a:hover {
 }
 
 .artwork-gallery img {
-  width: 100%; /* Set image width to full width */
-  height: auto; /* Set image height to auto */
+  width: 100%; /* Remove the margin from the img elements */
+  height: 100%; /* Set the image height to 100% */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.artwork-gallery {
+  margin-bottom: 40px; /* Add some space between the artwork items and the footer */
 }
 
 /* contact page */
