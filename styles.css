@@ -147,7 +147,7 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 36px;
+  font-size: 5vw;
   margin-bottom: 10px;
   color: #fff;
   animation: heroAnimation 2s ease-in-out;
@@ -268,7 +268,7 @@ nav a:hover {
 
 .artwork-details {
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 10%;
   margin-bottom: 20px;
 }
 
@@ -332,3 +332,5 @@ nav a:hover {
 .ibutton img:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 768px) 
