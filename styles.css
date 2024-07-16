@@ -90,8 +90,8 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column; /* Stack navigation items vertically */
-  justify-content: flex-start;
+  flex-direction: row; /* Stack navigation items vertically */
+  justify-content: space-around;
   background-color: #2c3e50;
 }
 
@@ -130,7 +130,7 @@ nav a:hover {
   background-color: #007bff; /* Light Blue*/
   padding: 20px;
   text-align: center;
-  height: 100vh; /* Set the hero section to full viewport height*/
+  height: auto; /* Set the hero section to full viewport height*/
   display: flex;
   justify-content: left;
   align-items: center;
