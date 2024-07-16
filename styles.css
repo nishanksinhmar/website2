@@ -144,6 +144,7 @@ nav a:hover {
   object-fit: cover;
   border-color: black;
   border-radius: 20px;
+  height: auto;
 }
 
 .hero h1 {
@@ -259,6 +260,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
 }
 
 .artwork-gallery li {
