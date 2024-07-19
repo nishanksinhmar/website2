@@ -136,6 +136,7 @@ nav a {
   width: 100vw; /* Add this line to make the hero section full width */
 }
 
+
 .hero img {
   width: 100%; /* Set the image to full width*/
   max-width: 500px;
