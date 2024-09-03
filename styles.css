@@ -311,7 +311,7 @@ nav a {
 }
 
 .contact button[type="submit"] {
-  / background-color:
+   background-color:black;
   color: #ffffff;
   padding: 10px 20px;
   border: none;
@@ -345,5 +345,3 @@ nav a {
 .ibutton img:hover {
   transform: scale(1.2);
 }
-
-@media (max-width: 768px) 
